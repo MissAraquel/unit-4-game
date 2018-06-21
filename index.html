@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <title>Crystal Collector Game</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
     <script
         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
         crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="title" align="center">
+        <h1>Crystal Collector</h1>
+    </div>
+    <div class="crystal-wrap">
+        <div class="crystals" align="center">
+        </div>
+    </div>
     <p id="result"></p>
-    <div class="crystals"></div>
     <p id="previous"></p>
-    <p id="win"></p>
-    <p id="loss"></p>
-
+    <div class="track">
+        <p id="win"></p> <!-- Tracks wins -->
+        <p id="loss"></p> <!-- Tracks losses -->
+    </div>
     <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>

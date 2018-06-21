@@ -1,13 +1,57 @@
-.crystals {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+body {
+    background: 
+        linear-gradient( rgba(54, 116, 146, 0.65), rgb(2, 4, 25)),
+        url(../pics/bgcrsytals.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.title h1 {
+    font-family: 'Bungee Shade', cursive;
+    padding: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+.title p {
+    color: #fff;
+    font-style: italic;
 }
 
 .crystal {
-    border: 1px solid blue;
+    display: inline-block;
+    margin: 30px;
+}
+
+.crystal {
     height: 200px;
     width: 200px;
-    border-radius: 55%;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.crystal:hover{
+    opacity: 0.5;
+    transition: 0.3s ease-in;
+}
+#result {
+    width: 50px;
+}
+
+#result,
+#previous,
+.track {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+
+#win {
+    color: green;
+}
+
+#loss {
+    color: red;
 }
