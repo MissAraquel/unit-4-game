@@ -15,9 +15,17 @@ var previous = 0;
 var startResetGame = function() {
 
     $(".crystals").empty();
+
+    var images = [
+        'assets/pics/crystal1.png',
+        'assets/pics/crystal2.png',
+        'assets/pics/crystal3.png',
+        'assets/pics/crystal4.png'];
+
+    console.log(images[i]);
+
     //generates random number from 19-120 for random result 
     randomResult = Math.floor(Math.random() * 100 + 20);
-    //console.log(randomResult);
 
     $("#result").html('Random Result: ' + randomResult);
 
@@ -30,10 +38,13 @@ var startResetGame = function() {
         //creates div for each crystal
         var crystal = $("<div>");
             crystal.attr({
-            "class": 'crystal',
-            "dataRandom": random
+                "class": 'crystal',
+                "dataRandom": random
             });
-
+            crystal.css({
+                "background-image":"url('" + images[i] + "')",
+                "background-size":"cover"
+            });
         $(".crystals").append(crystal);
     }
     $("#previous").html("Total Score: " + previous);
