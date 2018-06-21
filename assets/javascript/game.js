@@ -1,8 +1,8 @@
 //game with 4 crystals and random result
 //every crystal needs to generate random number from 1-12
-//new random # should be generated for each crystal everytime theres a win or lost
+//new random # should be generated for each crystal everytime theres a win or loss
 //everytime crystal is clicked it should add to the previous result until equals random result 
-//if its over random result it should increment lost counter
+//if its over random result it should increment loss counter
 //if its equal then it should increment win counter
 
 
@@ -47,7 +47,7 @@ var startResetGame = function() {
             });
         $(".crystals").append(crystal);
     }
-    $("#previous").html("Total Score: " + previous);
+    $("#total").html("Total Score: " + previous);
 }
 
 startResetGame();
@@ -59,7 +59,7 @@ $(document).on("click", ".crystal", function() {
 
     previous += num;
 
-    $("#previous").html("Total Score: " + previous);
+    $("#total").html("Total Score: " + previous);
 
     console.log(previous);
 
